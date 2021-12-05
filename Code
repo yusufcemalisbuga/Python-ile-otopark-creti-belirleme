@@ -1,0 +1,11 @@
+#
+ 
+saat = int(input("Lütfen saat giriniz: "))
+toplam = 0
+if(saat >= 24):
+    toplam = int(saat/24)*15 + (saat%24)*0.5 #int koyma sebebimiz tam sayı değeri almak içindir.
+elif(saat <= 5):
+    toplam = saat * 1
+else:
+    toplam = 5 + (saat-5)*0.5
+print(toplam)
